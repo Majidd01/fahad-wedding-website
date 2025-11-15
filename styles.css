@@ -353,6 +353,24 @@ body {
     left: -40px;
 }
 
+.timeline-date-inline {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid rgba(212, 165, 116, 0.2);
+}
+
+@media (min-width: 769px) {
+    .timeline-date-inline {
+        display: none;
+    }
+}
+
 .timeline-content h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
@@ -635,6 +653,10 @@ body {
 
     .timeline-date {
         display: none;
+    }
+
+    .timeline-date-inline {
+        display: block;
     }
 
     .timeline-content {
