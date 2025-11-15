@@ -559,6 +559,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -592,8 +596,13 @@ body {
         transform: rotate(-45deg) translate(7px, -6px);
     }
 
+    .hero {
+        padding: 0 15px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
+        padding: 0 10px;
     }
 
     .weds {
@@ -607,6 +616,11 @@ body {
 
     .section-title {
         font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .timeline {
+        padding: 60px 0;
     }
 
     .timeline-container::before {
@@ -616,10 +630,15 @@ body {
     .timeline-item {
         flex-direction: row !important;
         padding-left: 3rem;
+        margin-bottom: 2.5rem;
     }
 
     .timeline-date {
         display: none;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
     }
 
     .timeline-content::before {
@@ -628,15 +647,20 @@ body {
     }
 
     .contacts-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-
-    .countdown {
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
+    .contacts {
+        padding: 60px 0;
+    }
+
+    .countdown {
+        gap: 0.8rem;
+    }
+
     .countdown-item {
-        min-width: 80px;
+        min-width: 70px;
     }
 
     .countdown-number {
@@ -645,6 +669,7 @@ body {
 
     .nav-message {
         font-size: 1rem;
+        padding: 0 10px;
     }
 
     .countdown-container {
@@ -654,27 +679,29 @@ body {
 
     .countdown-label {
         font-size: 1rem;
+        margin-bottom: 1.2rem;
     }
 
     .countdown-label-small {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     .qr-code {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
     }
 
     .qr-heading {
         font-size: 1rem;
-    }
-
-    .timeline-content {
-        padding: 1.5rem;
+        margin-bottom: 0.8rem;
     }
 
     .name-parent {
         font-size: 0.9rem;
+    }
+
+    .rsvp {
+        padding: 60px 0;
     }
 
     .rsvp-item {
@@ -685,12 +712,28 @@ body {
     .contacts-subtitle {
         font-size: 1.1rem;
         padding: 0 15px;
+        margin-bottom: 2rem;
+    }
+
+    .contact-card {
+        padding: 1.8rem 1rem;
     }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .hero {
+        padding: 0 12px;
+        min-height: 100vh;
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        padding: 0 8px;
+        line-height: 1.3;
     }
 
     .hero-date-main {
@@ -698,87 +741,146 @@ body {
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .section-title::after {
+        width: 60px;
+        height: 2px;
     }
 
     .countdown-number {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .countdown-item {
-        min-width: 70px;
-    }
-
-    .contacts-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-message {
-        font-size: 0.9rem;
-        padding: 0 10px;
-    }
-
-    .rsvp-item {
-        font-size: 1rem;
-        padding: 1rem 1.2rem;
-    }
-
-    .qr-code {
-        width: 120px;
-        height: 120px;
-        padding: 8px;
-    }
-
-    .qr-heading {
-        font-size: 0.9rem;
-    }
-
-    .weds {
-        font-size: 1.5rem;
-        margin: 1rem 0;
-    }
-
-    .countdown-container {
-        padding: 1rem;
-        margin-top: 1.5rem;
-    }
-
-    .countdown-label {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
+        min-width: 65px;
     }
 
     .countdown-label-small {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
+    }
+
+    .contacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .nav-message {
+        font-size: 0.85rem;
+        padding: 0 8px;
+    }
+
+    .rsvp {
+        padding: 50px 0;
+    }
+
+    .rsvp-item {
+        font-size: 0.95rem;
+        padding: 1rem 1rem;
+    }
+
+    .qr-code {
+        width: 110px;
+        height: 110px;
+        padding: 6px;
+    }
+
+    .qr-heading {
+        font-size: 0.85rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .weds {
+        font-size: 1.3rem;
+        margin: 0.8rem 0;
+    }
+
+    .countdown-container {
+        padding: 1.2rem;
+        margin-top: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .countdown-label {
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .countdown-label-small {
+        font-size: 0.65rem;
+    }
+
+    .timeline {
+        padding: 50px 0;
+    }
+
+    .timeline-item {
+        padding-left: 2.5rem;
+        margin-bottom: 2rem;
     }
 
     .timeline-content {
-        padding: 1.2rem;
+        padding: 1rem;
+        border-radius: 8px;
     }
 
     .timeline-content h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
     }
 
     .timeline-location {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .name-parent {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+    }
+
+    .contacts {
+        padding: 50px 0;
     }
 
     .contacts-subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
         padding: 0 10px;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
     }
 
     .contact-card {
-        padding: 1.5rem 1rem;
+        padding: 1.2rem 0.6rem;
+        border-radius: 12px;
     }
 
     .contact-card h3 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-icon {
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .qr-code-container {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
     }
 }
 
