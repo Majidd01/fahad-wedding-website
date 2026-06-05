@@ -1,291 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Celebration</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Malik Auto Services — premium tire shop in Lahore. General Tyre, Servis, Dunlop, Michelin & more. 4.6★ on Google. Call 0305 7777577.">
+  <title>Malik Auto Services | Premium Tyre Shop in Lahore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,500&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-message">Join us in celebrating our special day</div>
-        </div>
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+            <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+            <line x1="16" y1="2" x2="16" y2="10" stroke="currentColor" stroke-width="2"/>
+            <line x1="16" y1="22" x2="16" y2="30" stroke="currentColor" stroke-width="2"/>
+            <line x1="2" y1="16" x2="10" y2="16" stroke="currentColor" stroke-width="2"/>
+            <line x1="22" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <strong>Malik Auto Services</strong>
+          <small>Premium Tyres · Lahore</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:+923057777577" class="nav-cta">Call Now</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="container hero-grid">
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="name2">Fahad Nazir Malik</span>
-                <span class="name-parent">Son of Mr & Mrs Nazir Ahmed Malik</span>
-                <span class="weds">weds</span>
-                <span class="name1">Daughter of Mr & Mrs Yasir</span>
-            </h1>
-            <div class="countdown-container">
-                <p class="countdown-label">Countdown to Our First Event</p>
-                <div class="countdown" id="countdown">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">0</span>
-                        <span class="countdown-label-small">Days</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">0</span>
-                        <span class="countdown-label-small">Hours</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">0</span>
-                        <span class="countdown-label-small">Minutes</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">0</span>
-                        <span class="countdown-label-small">Seconds</span>
-                    </div>
-                </div>
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            Tire Shop in Lahore
+          </div>
+          <h1>Malik Auto<br><span>Services</span></h1>
+          <p class="hero-lead">
+            Your trusted destination for premium tyres — from General Tyre and Servis to Michelin, Dunlop, and Bridgestone. Expert fitting on Wahdat Road, Muslim Town.
+          </p>
+          <div class="hero-ratings">
+            <div class="rating-card">
+              <div class="stars" aria-label="4.6 out of 5 stars">★★★★★</div>
+              <div class="rating-meta">
+                <strong>4.6</strong>
+                <span>86 Google reviews</span>
+              </div>
             </div>
+            <div class="rating-card">
+              <div class="stars" aria-label="4.8 out of 5 stars">★★★★★</div>
+              <div class="rating-meta">
+                <strong>4.8</strong>
+                <span>26 Facebook votes</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="tel:+923057777577" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              0305 7777577
+            </a>
+            <a href="https://www.google.com/maps/search/18b+Wahdat+Rd,+opposite+abrar+centre,+Muslim+Town,+Lahore" target="_blank" rel="noopener" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Get Directions
+            </a>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="arrow"></div>
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img
+              src="images/hero-tyre.jpg"
+              alt="Premium car tyre close-up"
+              class="hero-image"
+              loading="eager"
+            >
+            <div class="hero-image-accent"></div>
+          </div>
+          <div class="hero-float-card">
+            <span class="float-label">Trusted Brands</span>
+            <span class="float-value">15+</span>
+            <span class="float-sub">Local & International</span>
+          </div>
         </div>
+      </div>
+      <div class="brand-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>General Tyre</span><span>·</span>
+          <span>Servis</span><span>·</span>
+          <span>Diamond</span><span>·</span>
+          <span>Panther</span><span>·</span>
+          <span>Dunlop</span><span>·</span>
+          <span>Michelin</span><span>·</span>
+          <span>Bridgestone</span><span>·</span>
+          <span>Goodyear</span><span>·</span>
+          <span>Yokohama</span><span>·</span>
+          <span>Continental</span><span>·</span>
+          <span>General Tyre</span><span>·</span>
+          <span>Servis</span><span>·</span>
+          <span>Diamond</span><span>·</span>
+          <span>Panther</span><span>·</span>
+          <span>Dunlop</span><span>·</span>
+          <span>Michelin</span><span>·</span>
+          <span>Bridgestone</span><span>·</span>
+          <span>Goodyear</span><span>·</span>
+          <span>Yokohama</span><span>·</span>
+          <span>Continental</span><span>·</span>
+        </div>
+      </div>
     </section>
 
-    <!-- Timeline Section -->
-    <section id="timeline" class="timeline">
-        <div class="container">
-            <h2 class="section-title">Wedding Events</h2>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <div class="timeline-date">Tuesday, 2 Dec 2025</div>
-                    <div class="timeline-content">
-                        <div class="timeline-date-inline">Tuesday, 2 Dec 2025</div>
-                        <h3>Mehndi Event</h3>
-                        <p>Join us for the beautiful Mehndi ceremony</p>
-                        <p class="timeline-location">📍 Heaven Event Complex, Jubilee Town</p>
-                        <div class="qr-code-container">
-                            <p class="qr-heading">Scan for Location</p>
-                            <a href="https://share.google/dT1PEBmlBwLkMdeVh" target="_blank" rel="noopener noreferrer">
-                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://share.google/dT1PEBmlBwLkMdeVh" alt="Mehndi Location QR Code" class="qr-code">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Thursday, 4 Dec 2025</div>
-                    <div class="timeline-content">
-                        <div class="timeline-date-inline">Thursday, 4 Dec 2025</div>
-                        <h3>Barat Event</h3>
-                        <p>Celebrate with us on our Barat ceremony</p>
-                        <p class="timeline-location">📍 Dynasty Marquee, Gulberg</p>
-                        <div class="qr-code-container">
-                            <p class="qr-heading">Scan for Location</p>
-                            <a href="https://share.google/p1R8yFbAkgZ1HYWVx" target="_blank" rel="noopener noreferrer">
-                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://share.google/p1R8yFbAkgZ1HYWVx" alt="Barat Location QR Code" class="qr-code">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Saturday, 6 Dec 2025</div>
-                    <div class="timeline-content">
-                        <div class="timeline-date-inline">Saturday, 6 Dec 2025</div>
-                        <h3>Walima Event</h3>
-                        <p>Join us for the grand Walima celebration</p>
-                        <p class="timeline-location">📍 Heaven Marquee, Bahria Town</p>
-                        <div class="qr-code-container">
-                            <p class="qr-heading">Scan for Location</p>
-                            <a href="https://share.google/tUBKgmlq0Ghgm0bsf" target="_blank" rel="noopener noreferrer">
-                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://share.google/tUBKgmlq0Ghgm0bsf" alt="Walima Location QR Code" class="qr-code">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="brands" id="brands">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Catalogue</span>
+          <h2>Premium Tyre Brands</h2>
+          <p>We stock Pakistan's most trusted local manufacturers alongside world-class international brands — for every vehicle and budget.</p>
         </div>
+
+        <div class="brands-tabs">
+          <button class="brand-tab active" data-tab="local">Pakistani Brands</button>
+          <button class="brand-tab" data-tab="international">International Brands</button>
+        </div>
+
+        <div class="brands-panel active" id="panel-local">
+          <div class="brands-grid">
+            <article class="brand-card featured">
+              <div class="brand-image">
+                <img src="images/tyre-closeup.jpg" alt="General Tyre — Pakistan's leading tyre manufacturer" loading="lazy">
+                <span class="brand-badge">Most Popular</span>
+              </div>
+              <div class="brand-body">
+                <h3>General Tyre</h3>
+                <p class="brand-origin">Made in Pakistan</p>
+                <p>Pakistan's largest tyre manufacturer. Known for durability, value, and a wide range for cars, SUVs, and commercial vehicles. A household name trusted across the country.</p>
+                <ul class="brand-tags">
+                  <li>GT Radial</li>
+                  <li>GT Euro</li>
+                  <li>Commercial</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/car-tyre.jpg" alt="Servis Tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Servis Tyres</h3>
+                <p class="brand-origin">Made in Pakistan</p>
+                <p>One of Pakistan's oldest and most respected tyre brands. Excellent grip, long tread life, and affordable pricing for everyday drivers.</p>
+                <ul class="brand-tags">
+                  <li>Steel Radial</li>
+                  <li>X-Power</li>
+                  <li>SUV Range</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/tyre-tread.jpg" alt="Diamond Tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Diamond Tyres</h3>
+                <p class="brand-origin">Made in Pakistan</p>
+                <p>Reliable performance tyres built for Pakistani roads and climate. Popular choice for budget-conscious buyers who won't compromise on safety.</p>
+                <ul class="brand-tags">
+                  <li>Passenger</li>
+                  <li>Light Truck</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/wheel-detail.jpg" alt="Panther Tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Panther Tyres</h3>
+                <p class="brand-origin">Made in Pakistan</p>
+                <p>Strong road grip and competitive pricing. A growing favourite among Lahore drivers for sedans and hatchbacks.</p>
+                <ul class="brand-tags">
+                  <li>Radial</li>
+                  <li>All-Season</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/tyre-stack.jpg" alt="Ghauri Tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Ghauri Tyres</h3>
+                <p class="brand-origin">Made in Pakistan</p>
+                <p>Locally manufactured tyres offering solid performance for city driving and highway use at economical rates.</p>
+                <ul class="brand-tags">
+                  <li>Economy</li>
+                  <li>Mid-Range</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/car-wheel.jpg" alt="RZ Tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>RZ Tyres</h3>
+                <p class="brand-origin">Made in Pakistan</p>
+                <p>Quality Pakistani-made tyres with dependable traction and heat resistance — ideal for Lahore's warm climate.</p>
+                <ul class="brand-tags">
+                  <li>Passenger</li>
+                  <li>Performance</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="brands-panel" id="panel-international">
+          <div class="brands-grid">
+            <article class="brand-card featured">
+              <div class="brand-image">
+                <img src="images/hero-tyre.jpg" alt="Michelin premium tyres" loading="lazy">
+                <span class="brand-badge">Premium</span>
+              </div>
+              <div class="brand-body">
+                <h3>Michelin</h3>
+                <p class="brand-origin">France · Global Leader</p>
+                <p>World-renowned for safety, longevity, and fuel efficiency. The gold standard for drivers who demand the very best.</p>
+                <ul class="brand-tags">
+                  <li>Pilot Sport</li>
+                  <li>Primacy</li>
+                  <li>Energy</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/tyre-closeup.jpg" alt="Bridgestone tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Bridgestone</h3>
+                <p class="brand-origin">Japan</p>
+                <p>Japan's top tyre brand — exceptional wet grip, quiet ride, and proven performance on highways and city streets.</p>
+                <ul class="brand-tags">
+                  <li>Turanza</li>
+                  <li>Potenza</li>
+                  <li>Ecopia</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/car-tyre.jpg" alt="Dunlop tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Dunlop</h3>
+                <p class="brand-origin">UK · Widely Available</p>
+                <p>A trusted name in Pakistan for decades. Excellent balance of performance, comfort, and price for sedans and SUVs.</p>
+                <ul class="brand-tags">
+                  <li>SP Sport</li>
+                  <li>Grandtrek</li>
+                  <li>SP Touring</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/tyre-tread.jpg" alt="Goodyear tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Goodyear</h3>
+                <p class="brand-origin">USA</p>
+                <p>Over a century of innovation. Known for all-weather reliability and strong tread patterns suited to varied Pakistani terrain.</p>
+                <ul class="brand-tags">
+                  <li>Eagle</li>
+                  <li>Assurance</li>
+                  <li>Wrangler</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/wheel-detail.jpg" alt="Yokohama tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Yokohama</h3>
+                <p class="brand-origin">Japan</p>
+                <p>High-performance Japanese engineering. Popular among enthusiasts for sporty handling and superior road feedback.</p>
+                <ul class="brand-tags">
+                  <li>Advan</li>
+                  <li>BluEarth</li>
+                  <li>Geolandar</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/tyre-stack.jpg" alt="Continental tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Continental</h3>
+                <p class="brand-origin">Germany</p>
+                <p>German precision engineering. Premium comfort, low noise, and outstanding braking performance in all conditions.</p>
+                <ul class="brand-tags">
+                  <li>PremiumContact</li>
+                  <li>CrossContact</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/car-wheel.jpg" alt="Pirelli tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Pirelli</h3>
+                <p class="brand-origin">Italy</p>
+                <p>Italian luxury and performance. The choice for premium vehicles — superior grip and iconic design.</p>
+                <ul class="brand-tags">
+                  <li>P Zero</li>
+                  <li>Cinturato</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="brand-card">
+              <div class="brand-image">
+                <img src="images/tyre-shop.jpg" alt="Hankook tyres" loading="lazy">
+              </div>
+              <div class="brand-body">
+                <h3>Hankook</h3>
+                <p class="brand-origin">South Korea</p>
+                <p>Rising global brand with excellent value. OEM supplier to major car makers — quality you can trust.</p>
+                <ul class="brand-tags">
+                  <li>Ventus</li>
+                  <li>Kinergy</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="brands-cta">
+          <p>Not sure which brand suits your car? Call us — we'll recommend the perfect fit.</p>
+          <a href="tel:+923057777577" class="btn btn-primary">Get Expert Advice</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacts" class="contacts">
-        <div class="container">
-            <h2 class="section-title">Our Friends</h2>
-            <p class="contacts-subtitle">"Friends are the family we choose for ourselves. Thank you for being part of our special day."</p>
-            <div class="contacts-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Majid Baloch</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Zafar Shahid</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Zohaib Riaz</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Aman Shahid</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Mamoon Rasheed</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Sheikh Faizan</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Hassan Rana</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Saad Butt</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Hassan Shahzad</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Sohaib Riaz</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Salman Riaz</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Fahad Sheikh</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Umair Riaz</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Haider Khurrum</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Shayan Illyas</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Rehan Illyas</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Zanoon Shahzad</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Hussain Murtaza</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Taimoor Alam</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Zubair Bajwa</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Usama Naveed</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Aqib Fayaz</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Awais Ali</h3>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">👤</div>
-                    <h3>Suleman Khan</h3>
-                </div>
-            </div>
+    <section class="gallery">
+      <div class="gallery-grid" aria-hidden="true">
+        <img src="images/tyre-closeup.jpg" alt="">
+        <img src="images/hero-tyre.jpg" alt="">
+        <img src="images/car-tyre.jpg" alt="">
+        <img src="images/tyre-stack.jpg" alt="">
+      </div>
+      <div class="gallery-overlay">
+        <div class="container gallery-content">
+          <span class="section-tag">Why Choose Us</span>
+          <h2>Genuine Tyres.<br>Expert Hands.</h2>
+          <p>Every tyre we sell is sourced from authorised distributors. No counterfeits — only brands you can drive on with confidence.</p>
         </div>
+      </div>
     </section>
 
-    <!-- RSVP Section -->
-    <section id="rsvp" class="rsvp">
-        <div class="container">
-            <h2 class="section-title">RSVP</h2>
-            <p class="rsvp-subtitle">We cordially invite you to join us in celebration</p>
-            <div class="rsvp-list">
-                <div class="rsvp-item">Mr & Mrs Bashir Ahmed Malik</div>
-                <div class="rsvp-item">Mr & Mrs Waqas Bashir Malik</div>
-                <div class="rsvp-item">Mr & Mrs Waqar Bashir Malik</div>
-                <div class="rsvp-item">Mr & Mrs Asif Javed</div>
-                <div class="rsvp-item">Mr & Mrs Muhammad Hussain</div>
-                <div class="rsvp-item">Mr Salaar Javed</div>
-                <div class="rsvp-item">Mr Rehan Nazir</div>
-                <div class="rsvp-item">Mr Hanan Nazir</div>
-            </div>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What We Offer</span>
+          <h2>Complete Tyre Solutions</h2>
+          <p>From new tyres to wheel care — everything your vehicle needs under one roof.</p>
         </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h3>New & Used Tyres</h3>
+            <p>Wide range of local and imported tyre brands for cars, SUVs, and commercial vehicles at competitive prices.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Tyre Fitting</h3>
+            <p>Professional mounting and demounting with precision equipment for a safe, secure fit every time.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <h3>Wheel Balancing</h3>
+            <p>Eliminate vibrations and uneven wear with computerised wheel balancing for a smoother ride.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Wheel Alignment</h3>
+            <p>Correct steering pull and extend tyre life with accurate front-end alignment services.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+            <h3>Puncture Repair</h3>
+            <p>Quick and reliable puncture fixes so you're back on the road without unnecessary delays.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-4V6a2 2 0 0 0-4 0v4H6a2 2 0 0 0 0 4h4v4a2 2 0 0 0 4 0v-4h4a2 2 0 0 0 0-4z"/></svg>
+            </div>
+            <h3>Air Pressure Check</h3>
+            <p>Free pressure checks and top-ups to keep your tyres at optimal levels for safety and fuel efficiency.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p> Made with ❤️</p>
-            <p class="footer-contact">For questions, please contact: majidbaloch11@gmail.com</p>
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-image-wrap">
+          <img
+            src="images/about-fitting.jpg"
+            alt="Professional tyre fitting at Malik Auto Services"
+            class="about-image"
+            loading="lazy"
+          >
+          <div class="about-image-frame"></div>
         </div>
-    </footer>
+        <div class="about-content">
+          <span class="section-tag">About Us</span>
+          <h2>Lahore's Trusted Tyre Experts</h2>
+          <p>
+            Located on Wahdat Road opposite Abrar Centre in Muslim Town, Malik Auto Services has built a
+            reputation for quality products, fair pricing, and friendly service that keeps customers coming back.
+          </p>
+          <p>
+            Whether you need a single replacement tyre or a full set for your family car, our experienced
+            team helps you choose the right option for your budget and driving needs.
+          </p>
+          <ul class="about-features">
+            <li><span class="check">✓</span> Genuine & trusted tyre brands</li>
+            <li><span class="check">✓</span> Experienced technicians</li>
+            <li><span class="check">✓</span> Transparent pricing</li>
+            <li><span class="check">✓</span> Convenient Muslim Town location</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">4.6★</span>
+            <span class="stat-label">Google Rating</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">86+</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10 AM</span>
+            <span class="stat-label">Opens Daily</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10 PM</span>
+            <span class="stat-label">Closes Daily</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        // Countdown Timer
-        function updateCountdown() {
-            const targetDate = new Date('December 2, 2025 00:00:00').getTime();
-            const now = new Date().getTime();
-            const distance = targetDate - now;
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Customer Reviews</span>
+          <h2>What Our Customers Say</h2>
+          <p>Rated highly on Google and Facebook by drivers across Lahore.</p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>"Great service and honest prices. They helped me pick the right General Tyres for my Corolla and fitted them quickly. Highly recommended!"</p>
+            <footer>— Google Review</footer>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>"Been coming here for years. Always professional, never pushy. Best tyre shop in Muslim Town area."</p>
+            <footer>— Google Review</footer>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>"Quick puncture repair and very reasonable rates. Staff is friendly and knows their stuff."</p>
+            <footer>— Facebook Review</footer>
+          </article>
+        </div>
+        <div class="reviews-cta">
+          <p>Love our service? Leave us a review!</p>
+          <a href="https://www.google.com/maps/search/Malik+Auto+Services+Wahdat+Road+Lahore" target="_blank" rel="noopener" class="btn btn-outline">Write a Google Review</a>
+        </div>
+      </div>
+    </section>
 
-            if (distance < 0) {
-                document.getElementById('days').textContent = '0';
-                document.getElementById('hours').textContent = '0';
-                document.getElementById('minutes').textContent = '0';
-                document.getElementById('seconds').textContent = '0';
-                return;
-            }
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Visit Us</span>
+          <h2>Get in Touch</h2>
+          <p>Stop by our shop or give us a call — we're here to help.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3>Address</h3>
+                <p>18b Wahdat Rd, opposite Abrar Centre,<br>Muslim Town, Lahore, 54600</p>
+                <a href="https://www.google.com/maps/search/18b+Wahdat+Rd,+opposite+abrar+centre,+Muslim+Town,+Lahore" target="_blank" rel="noopener" class="contact-link">Open in Google Maps →</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+923057777577">0305 7777577</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                  <li><span>Monday – Friday</span><span>10:00 AM – 10:00 PM</span></li>
+                  <li><span>Saturday</span><span>10:00 AM – 10:00 PM</span></li>
+                  <li><span>Sunday</span><span>10:00 AM – 10:00 PM</span></li>
+                </ul>
+              </div>
+            </div>
+            <a href="tel:+923057777577" class="btn btn-primary btn-full">Call Malik Auto Services</a>
+          </div>
+          <div class="contact-map">
+            <iframe
+              title="Malik Auto Services location on Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.2!2d74.308!3d31.494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDI5JzM4LjQiTiA3NMKwMTgnMjguOCJF!5e0!3m2!1sen!2spk!4v1"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-fallback">
+              <p>18b Wahdat Rd, Muslim Town, Lahore</p>
+              <a href="https://www.google.com/maps/search/18b+Wahdat+Rd,+opposite+abrar+centre,+Muslim+Town,+Lahore" target="_blank" rel="noopener" class="btn btn-secondary">View on Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <strong>Malik Auto Services</strong>
+        <span>Tire shop in Lahore · Muslim Town</span>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+923057777577">0305 7777577</a>
+        <a href="https://www.google.com/maps/search/18b+Wahdat+Rd,+Muslim+Town,+Lahore" target="_blank" rel="noopener">Directions</a>
+        <a href="#brands">Brands</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Malik Auto Services. All rights reserved.</p>
+    </div>
+  </footer>
 
-            document.getElementById('days').textContent = days;
-            document.getElementById('hours').textContent = hours;
-            document.getElementById('minutes').textContent = minutes;
-            document.getElementById('seconds').textContent = seconds;
-        }
+  <a href="tel:+923057777577" class="floating-call" aria-label="Call Malik Auto Services">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
 
-        // Update countdown every second
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
